@@ -21,9 +21,10 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-menu" id="navMenu">
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#formacao">Formação</a></li>
+      <li><a href="#top">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
       <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#projetos">Projetos</a></li>
       <li><a href="#contato" class="nav-cta">Contato</a></li>
     </ul>
   </nav>
@@ -31,49 +32,64 @@
 
 <main>
   <!-- HERO -->
-  <section class="hero container">
-    <div class="hero-grid">
+  <section class="hero">
+    <div class="hero-grid container">
       <div class="hero-content">
-        <p class="hero-eyebrow"><span class="dot" aria-hidden="true"></span>disponível para oportunidades</p>
-        <h1 class="hero-title">
-          Tayná Silva Gonçalves
+        <p class="hero-eyebrow"><span class="dot" aria-hidden="true"></span>Olá, eu sou</p>
+
+        <h1 class="hero-name">
+          <span class="hero-name-serif">Tayná</span>
+          <span class="hero-name-sans">Gonçalves</span>
         </h1>
-        <p class="hero-role">Desenvolvedora de Sistemas</p>
+
+        <p class="hero-role">Desenvolvedora<br>de Sistemas</p>
+
         <p class="hero-text">
           Desenvolvedora com experiência prática criando sistemas do zero, incluindo uma
           plataforma SaaS de pedidos online e um sistema de gestão para cliente.
         </p>
 
         <div class="hero-actions">
-          <a href="#projetos" class="btn btn-primary">Ver projetos</a>
-          <a href="#contato" class="btn btn-ghost">Falar comigo</a>
+          <a href="assets/cv/curriculo-tayna-goncalves.pdf" class="btn btn-primary" download>
+            Baixar Currículo
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v9.59l3.3-3.3a1 1 0 1 1 1.4 1.42l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.42l3.3 3.3V4a1 1 0 0 1 1-1ZM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"/></svg>
+          </a>
+          <a href="#projetos" class="btn btn-ghost">Ver Projetos</a>
         </div>
-
-        <ul class="hero-contacts">
-          <li>
-            <a href="mailto:Taynagon7302@gmail.com" aria-label="E-mail">
-              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.2.3 7.15 5.72a1 1 0 0 0 1.3 0L19.8 5.8a.5.5 0 0 0-.3-.9H4.5a.5.5 0 0 0-.3.9Z"/></svg>
-              <span>Taynagon7302@gmail.com</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/tayná-gonçalves-a764b5354" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48Z"/></svg>
-              <span>linkedin.com/in/tayná-gonçalves</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/Taynagoncalves" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.03a9.5 9.5 0 0 1 5 0c1.9-1.3 2.75-1.03 2.75-1.03.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
-              <span>github.com/Taynagoncalves</span>
-            </a>
-          </li>
-        </ul>
       </div>
 
-      <div class="hero-photo-wrap">
-        <img class="hero-photo" src="assets/img/tayna-profile.jpeg" alt="Foto de perfil de Tayná Silva Gonçalves" width="200" height="200">
+      <div class="hero-photo-frame">
+        <img class="hero-photo-bleed" src="assets/img/tayna-profile.jpeg" alt="Foto de Tayná Silva Gonçalves">
       </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section sobre-section container">
+    <div class="sobre-heading">
+      <h2 class="sobre-title">Sobre Mim</h2>
+      <p class="sobre-subtitle">minha jornada até aqui</p>
+      <div class="divider-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+    </div>
+
+    <div class="sobre-text">
+      <p>
+        Sou desenvolvedora de sistemas formada em Análise e Desenvolvimento de Sistemas
+        pelo Senai, com uma abordagem prática: aprendo construindo produtos reais, do
+        zero até a produção.
+      </p>
+      <p>
+        Meu principal projeto é o <strong>Central Pedidos Online</strong>, uma plataforma
+        SaaS multi-tenant de pedidos que desenvolvi sozinha em cerca de dois meses — do
+        protótipo à produção — hoje usada por clientes pagantes reais, incluindo o negócio
+        da minha própria família. Também desenvolvi, sob encomenda, um
+        <strong>Sistema de Gestão de Gatil</strong> completo em React, atualmente em uso
+        ativo por uma cliente no dia a dia do negócio dela.
+      </p>
+      <p>
+        Gosto de resolver problemas reais com código, entender o negócio por trás do
+        sistema e entregar soluções que as pessoas realmente usam.
+      </p>
     </div>
   </section>
 
