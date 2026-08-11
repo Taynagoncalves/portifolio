@@ -128,6 +128,18 @@
       <div class="project-stack">
         <span>React</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
       </div>
+
+      <div class="project-gallery">
+        <button class="project-gallery-item" type="button" data-full="gatil/gatil-1.jpeg">
+          <img src="gatil/gatil-1.jpeg" alt="Tela inicial do app de gestão do gatil Cheirinho de Felicidade, com atalhos para Gestão do Gatil e Clientes e Financeiro" loading="lazy">
+        </button>
+        <button class="project-gallery-item" type="button" data-full="gatil/gatil-2.jpeg">
+          <img src="gatil/gatil-2.jpeg" alt="Dashboard do sistema com contagem de gatos, ninhadas, reservados e vendidos, além de atalhos para cadastro e relatórios" loading="lazy">
+        </button>
+        <button class="project-gallery-item" type="button" data-full="gatil/gatil-3.jpeg">
+          <img src="gatil/gatil-3.jpeg" alt="Tela de clientes com lista de compradores, valores pagos e status de pagamento" loading="lazy">
+        </button>
+      </div>
     </article>
   </section>
 
@@ -211,6 +223,11 @@
 </footer>
 
 <button class="to-top" id="toTop" aria-label="Voltar ao topo">↑</button>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">✕</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="">
+</div>
 
 <script src="script.js"></script>
 </body>
