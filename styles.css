@@ -367,6 +367,35 @@ h1, h2, h3, p { margin: 0; }
   gap: 8px;
 }
 .project-stack-integrations { margin-top: 8px; }
+
+.project-stack-groups {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 4px;
+}
+.project-stack-group:not(:last-child) {
+  padding-right: 20px;
+  border-right: 1px solid var(--line);
+}
+.project-stack-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 560px) {
+  .project-stack-groups { grid-template-columns: 1fr; gap: 18px; }
+  .project-stack-group:not(:last-child) {
+    padding-right: 0;
+    border-right: none;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--line);
+  }
+}
 .project-stack span {
   font-family: var(--font-mono);
   font-size: 0.78rem;
