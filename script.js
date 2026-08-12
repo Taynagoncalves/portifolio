@@ -62,7 +62,7 @@ document.addEventListener('keydown', (e) => {
 
 // Reveal-on-scroll animation
 const revealTargets = document.querySelectorAll(
-  '.project-card, .timeline-item, .skill-pill, .contact-card'
+  '.project-card, .timeline-item, .skill-pill, .contact-card, .sobre-stat'
 );
 
 if ('IntersectionObserver' in window) {

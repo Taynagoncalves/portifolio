@@ -287,7 +287,7 @@ button:focus-visible {
 
 /* ---------- Sobre Mim ---------- */
 .sobre-section {
-  max-width: 760px;
+  max-width: 800px;
 }
 
 .sobre-heading {
@@ -301,21 +301,12 @@ button:focus-visible {
   letter-spacing: -0.01em;
 }
 
-.sobre-subtitle {
-  margin-top: 8px;
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  color: var(--accent-2);
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-}
-
 .divider-dots {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-top: 20px;
+  margin-top: 18px;
 }
 .divider-dots span {
   width: 6px;
@@ -338,6 +329,47 @@ button:focus-visible {
   text-align: center;
 }
 .sobre-text strong { color: var(--text); }
+
+.sobre-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 44px;
+}
+
+.sobre-stat {
+  text-align: center;
+  padding: 22px 12px;
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.sobre-stat:hover {
+  border-color: rgba(124, 140, 255, 0.35);
+  transform: translateY(-3px);
+}
+
+.sobre-stat-number {
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: linear-gradient(100deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.sobre-stat-label {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: var(--text-faint);
+}
+
+@media (max-width: 640px) {
+  .sobre-stats { grid-template-columns: repeat(2, 1fr); }
+}
 
 /* ---------- Sections ---------- */
 .section {
@@ -820,7 +852,8 @@ button:focus-visible {
 .project-card,
 .timeline-item,
 .skill-pill,
-.contact-card {
+.contact-card,
+.sobre-stat {
   opacity: 0;
   transform: translateY(16px);
   transition: opacity 0.5s ease, transform 0.5s ease;
