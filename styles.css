@@ -636,6 +636,28 @@ button:focus-visible {
   margin-top: 4px;
 }
 
+.certificate-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid rgba(124, 140, 255, 0.3);
+  padding: 6px 13px;
+  border-radius: 999px;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+.certificate-link:hover {
+  background: rgba(124, 140, 255, 0.2);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+.certificate-link svg { flex-shrink: 0; }
+
 /* ---------- Skills ---------- */
 .skills-groups {
   display: grid;
