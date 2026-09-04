@@ -16,9 +16,9 @@
   --radius: 14px;
   --radius-sm: 8px;
 
-  --font-sans: 'Segoe UI', system-ui, -apple-system, 'Inter', Roboto, sans-serif;
+  --font-sans: 'Inter', 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
   --font-serif: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif;
-  --font-mono: 'Cascadia Code', 'JetBrains Mono', 'SFMono-Regular', Consolas, Menlo, monospace;
+  --font-mono: 'JetBrains Mono', 'Cascadia Code', 'SFMono-Regular', Consolas, Menlo, monospace;
 
   --container: 960px;
   --container-wide: 1140px;
@@ -708,26 +708,39 @@ button:focus-visible {
   border-bottom: 1px solid var(--line);
 }
 
-.skills-grid {
+.tech-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
-.skill-pill {
+.tech-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--font-mono);
   font-size: 0.88rem;
+  font-weight: 500;
   color: var(--text);
   background: var(--bg-elev);
   border: 1px solid var(--line);
-  padding: 9px 16px;
+  padding: 10px 16px 10px 12px;
   border-radius: var(--radius-sm);
-  transition: border-color 0.15s ease, color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
-.skill-pill:hover {
+.tech-card i,
+.tech-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.tech-card i.colored { color: initial; }
+.tech-card i:not(.colored) { color: var(--text-dim); }
+.tech-card:hover {
   border-color: var(--accent);
-  color: var(--accent);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 24px -14px rgba(124, 140, 255, 0.6);
+  color: var(--accent-2);
+  transform: translateY(-3px);
+  background: var(--bg-elev-2);
+  box-shadow: 0 14px 30px -16px rgba(124, 140, 255, 0.55);
 }
 
 @media (max-width: 640px) {
@@ -851,7 +864,7 @@ button:focus-visible {
 /* ---------- Reveal-on-scroll ---------- */
 .project-card,
 .timeline-item,
-.skill-pill,
+.tech-card,
 .contact-card,
 .sobre-stat {
   opacity: 0;
